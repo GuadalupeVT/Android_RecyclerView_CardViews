@@ -1,61 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="319dp"
+    android:layout_height="160dp">
 
-    <RelativeLayout
-        android:layout_width="318dp"
-        android:layout_height="531dp"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imagen"
-            android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop" />
-
-        <TextView
-            android:id="@+id/nombre"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/imagen"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/visitas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/nombre"
-            android:layout_alignLeft="@+id/nombre"
-            android:text="Small Text"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/compartir"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:src="@android:drawable/ic_menu_share"
-            android:background="@color/material_blue_grey_800" />
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imagen"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:background="#ffd5d5d5"
-            android:id="@+id/linea"
-            android:layout_above="@+id/compartir"
-            android:layout_toRightOf="@+id/imagen">
+            <TextView
+                android:id="@+id/visitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nombre"
+                android:layout_alignLeft="@+id/nombre"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
 
-        </View>
-    </RelativeLayout>
+            <View
+                android:id="@+id/linea"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_above="@+id/compartir"
+                android:layout_toRightOf="@+id/imagen"
+                android:background="#ffd5d5d5">
+
+            </View>
+
+            <ImageView
+                android:id="@+id/compartir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/material_blue_grey_800"
+                android:src="@android:drawable/ic_menu_share" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
 
 </android.support.constraint.ConstraintLayout>
+

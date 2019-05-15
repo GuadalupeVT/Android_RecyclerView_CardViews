@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         List items = new ArrayList();
 
 
-        items.add(new Anime(R.drawable.tokyoGhoul, "Tokyo Ghoul", 230));
-        items.add(new Anime(R.drawable.deathNote, "Death Note", 456));
-        items.add(new Anime(R.drawable.dragonBallSuper, "Dragon Ball Super", 342));
-        items.add(new Anime(R.drawable.miraiNikki, "Mirai Nikki", 645));
+        items.add(new Anime(R.drawable.tokyo_ghoul, "Tokyo Ghoul", 230));
+        items.add(new Anime(R.drawable.death_note, "Death Note", 456));
+        items.add(new Anime(R.drawable.dragon_ball_super, "Dragon Ball Super", 342));
+        items.add(new Anime(R.drawable.mirai_nikki, "Mirai Nikki", 645));
        // items.add(new Anime(R.drawable.suzumiya, "Suzumiya Haruhi", 459));
 
         // Obtener el Recycler
