@@ -20,9 +20,9 @@ public class AnimeAdapter extends RecyclerView.Adapter<AnimeAdapter.AnimeViewHol
 
         public AnimeViewHolder(View v) {
             super(v);
-          /*  imagen = (ImageView) v.findViewById(R.id.imagen);
+            imagen = (ImageView) v.findViewById(R.id.imagen);
             nombre = (TextView) v.findViewById(R.id.nombre);
-            visitas = (TextView) v.findViewById(R.id.visitas);*/
+            visitas = (TextView) v.findViewById(R.id.visitas);
         }
     }
 
@@ -37,9 +37,8 @@ public class AnimeAdapter extends RecyclerView.Adapter<AnimeAdapter.AnimeViewHol
 
     @Override
     public AnimeViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v=null; //Eliminar
-      /*View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.anime_card, viewGroup, false);*/
+      View v = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.anime_card, viewGroup, false);
         return new AnimeViewHolder(v);
     }
 
